@@ -15,12 +15,9 @@ import {
 } from '@chakra-ui/react'
 import React from 'react'
 import { BsPerson } from 'react-icons/bs'
-import emailjs from '@emailjs/browser'
 import { MdOutlineEmail } from 'react-icons/md'
-import { HTMLAttributes, useRef } from 'react'
 
 const ContactForm = () => {
-  const form  = useRef<HTMLFormElement>(null)
   const handlesubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
   }
@@ -28,7 +25,7 @@ const ContactForm = () => {
     <Box maxWidth="500px" mx="auto" mt={"6rem"} bg={useColorModeValue("gray.100", "gray.800")} p="6" rounded="lg">
       <VStack spacing="6">
         <Heading size="lg" textAlign="center">Contact Me</Heading>
-        <form ref={form} onSubmit={handlesubmit}>
+        <form  onSubmit={handlesubmit}>
           <Stack spacing="4" width="100%">
             <FormControl>
               <FormLabel htmlFor="name">Name</FormLabel>
