@@ -16,7 +16,7 @@ const HeroSection = () => {
                     ------ Advocate legal & Tax Consultant
                 </Text>
                 <Text width={"22rem"}>
-                    Based in Amir -ud-daula Public Library,
+                    Based in
                     Lucknow , Uttar Pradesh
                 </Text>
             </Flex>
